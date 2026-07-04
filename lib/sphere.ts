@@ -1,15 +1,10 @@
 // Initialize Sphere SDK for Unicity Testnet v2
-import { Sphere } from '@unicitylabs/sphere-sdk';
+// import { Sphere } from '@unicitylabs/sphere-sdk';
 
 const mnemonic = process.env.NAMELEASE_SYSTEM_WALLET_MNEMONIC || '';
 
 // Singleton SDK instance for server-side usage
-export const sphere = new Sphere({
-  network: 'testnet-v2',
-  wallet: {
-    mnemonic: mnemonic,
-  }
-});
+// export const getSphere = async () => await Sphere.create({ network: 'testnet-v2', mnemonic });
 
 /**
  * Mocks or implements the transfer of UCT
